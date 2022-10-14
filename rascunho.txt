@@ -1,0 +1,19 @@
+document.addEventListener("DOMContentLoaded", function(){
+    const pageTheme = document.getElementsByClassName('theme');
+    for(let i = 0; i < pageTheme.length; i++){
+        pageTheme[i].addEventListener('click', changeTheme);
+    }
+})
+function changeTheme(){
+    const pageBody = document.getElementsByTagName('body');
+    const actualTheme = document.getElementsByClassName('theme');
+    for(let i = 0; i < actualTheme.length; i++){
+        if(actualTheme[i].innerHTML === "City"){
+            pageBody.className = 'city';
+        }else if(actualTheme[i].innerHTML === "Classic"){
+            pageBody.className = 'classic';
+        }else{
+            pageBody.className = 'association';
+        }
+    }
+}
