@@ -5,15 +5,17 @@
   }
   body.association{
     --bg-color: #FFFFFF;
-    --text-color: #1d428a;
+    --text-color: #fdb927;
+    --text-border-color:#1d428a;
     --link-color: #fdb927;
     --primary-color: #1d428a;
     --primary-color-hover: #041e41;
   }
   body.city{
     --bg-color: #000000;
-    --text-color: #fdb927;
-    --link-color: #000000;
+    --text-color: #1750c2;
+    --text-border-color:#fdb927;
+    --link-color: #1750c2;
     --primary-color: #fdb927;
     --primary-color-hover: #8d6309 ;
   }
@@ -35,7 +37,7 @@
     background: var(--bg-color);
     font-family: 'Roboto', sans-serif;
     -webkit-text-stroke-color: var(--text-border-color);
-    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-width: 1.5px;
     color: var(--text-color);
   }
   h1{
